@@ -59,7 +59,7 @@ export default withFormik({
         .post(url, values)
         .then(response => {
           setToken(response.data.token);
-          formikBag.props.history.push("/meals");
+          formikBag.props.history.push("/food");
           console.log('login Response', response);
         })
         .catch(e => {
