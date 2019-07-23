@@ -18,7 +18,7 @@ function Food({history}) {
                 console.log('list', response)
                 setData(response.data);
             })
-            .catch(error => {
+            .catch(e => {
                 localStorage.removeItem("token");
                 history.push("/");
             });
